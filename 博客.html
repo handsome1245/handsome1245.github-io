@@ -4,17 +4,56 @@
     <meta charset="UTF-8">
     <title>我的个人博客</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        header, footer { text-align: center; padding: 1em; background-color: #f3f3f3; }
-        nav { text-align: center; margin-top: 1em; }
-        nav a { margin: 0 15px; text-decoration: none; color: darkblue; }
-        article { margin: 2em; }
-        section { margin-bottom: 2em; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+        }
+        nav {
+            text-align: center;
+            margin-top: 1em;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff7f00;
+        }
+        article {
+            margin: 2em;
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+        }
+        footer p {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>欢迎来到我的博客</h1>
+        <h1>欢迎来到我的个人博客</h1>
     </header>
     <nav>
         <a href="#about">关于我</a>
@@ -24,18 +63,25 @@
     <article>
         <section id="about">
             <h2>关于我</h2>
-            <p>这里是关于我的一些介绍，包括我的兴趣、经历等。</p>
+            <p>我是一名喜欢探索技术和分享知识的程序员。在业余时间，我喜欢写博客、阅读书籍、学习新技能，以及和朋友们一起探讨各种有趣的话题。</p>
+            <p>我曾在大学攻读计算机科学专业，并在毕业后加入了一家创业公司。目前，我在软件开发领域有几年的工作经验，主要专注于 Web 开发和人工智能。</p>
         </section>
         <section id="posts">
             <h2>最新博文</h2>
-            <p>这里可以展示最新的博文摘要，点击可以查看详细内容。</p>
+            <p>我最近写了一些关于前端开发、数据科学和人工智能的博客文章。欢迎你阅读并留下你的评论和反馈。</p>
+            <p>以下是一些我最近写的博客文章：</p>
+            <ul>
+                <li><a href="#">如何学习前端开发</a></li>
+                <li><a href="#">Python 数据科学入门指南</a></li>
+                <li><a href="#">使用 TensorFlow 构建神经网络</a></li>
+            </ul>
         </section>
         <section id="contact">
             <h2>联系方式</h2>
-            <p>您可以通过以下方式与我联系：</p>
+            <p>如果你对我的博客内容感兴趣，或者有任何问题、建议或合作意向，请随时通过以下方式与我联系：</p>
             <ul>
-                <li>电子邮件：example@email.com</li>
-                <li>Twitter：@example</li>
+                <li>电子邮件：<a href="mailto:me@example.com">me@example.com</a></li>
+                <li>Twitter：<a href="https://twitter.com/example">@example</a></li>
             </ul>
         </section>
     </article>
